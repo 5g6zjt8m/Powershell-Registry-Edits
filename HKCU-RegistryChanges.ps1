@@ -13,7 +13,7 @@ Remove-PSDrive -Name HKU
 #Create a drive to find the registry paths in
 New-PSDrive -PSProvider Registry -Name HKU -Root HKEY_USERS
 
-#Define registry paths as variables to reference later, a few examples
+#Define registry paths as variables to reference later, an example
 $RegPath8 = "HKU:\$SID\Control Panel\Cursors"
 
 #If the registry paths do not exist, create them.
